@@ -4,7 +4,8 @@
   "description": "Netlify CMS for Hugo, designed using the Victor Hugo setup. Based on the ./src of the one-click-hugo-cms project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git:hookspath": "git config core.hooksPath ../../.husky"
   },
   "repository": {
     "type": "git",
