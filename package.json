@@ -28,5 +28,10 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "commitiquette"
+    }
   }
 }
