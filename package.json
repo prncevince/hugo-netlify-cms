@@ -12,6 +12,20 @@
   "bugs": {
     "url": "https://gitlab.com/prncevince/hugo-netlify-cms/issues"
   },
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack --config webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "commitiquette"
+    }
+  },
+  "browserslist": [
+    "defaults", "not IE 11"
+  ],
   "dependencies": {
     "css-loader": "^5.0.1",
     "date-fns": "^2.16.1",
@@ -23,19 +37,9 @@
     "to-string-loader": "^1.1.6"
   },
   "devDependencies": {
+    "browserslist": "^4.16.3",
     "commitizen": "^4.2.2",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
-  },
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack --config webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "commitiquette"
-    }
   }
 }
