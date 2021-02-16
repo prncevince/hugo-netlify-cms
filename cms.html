@@ -6,6 +6,12 @@
   <title>Content Manager</title>
 </head>
 <body>
-  <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
+  <%
+    for (item of htmlWebpackPlugin.files.js) {
+      if (item.includes('cms') || item.includes('runtime') || item.includes('vendors')) { %>
+        <script src="<%= item %>"></script><%
+      }
+    }
+  %>
 </body>
 </html>
